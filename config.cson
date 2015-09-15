@@ -1,0 +1,97 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "Source Code Pro"
+    preferredLineLength: 100
+    softWrapAtPreferredLineLength: true
+    fontSize: 16
+  core:
+    audioBeep: false
+    fileEncoding: "windows1252"
+    ignoredNames: [
+      "tags"
+      "*.map"
+      "*.dcu"
+      "*.~dpr"
+      "*.~pas"
+      "*.~dfm"
+      "*.exe"
+      "*.dfm"
+      "*.bpl"
+      "*.dcp"
+      "*.dsk"
+      "*.tds"
+      "*.pdf"
+      "Thumbs.db"
+      "*.dll"
+      "*.obj"
+      "*.OBJ"
+      "*.zip"
+      "*.pyd"
+      ".DS_Store"
+      "._.DS_Store"
+    ]
+    disabledPackages: [
+      "soft-wrap-indicator"
+      "exception-reporting"
+    ]
+    themes: [
+      "code-dark-ui"
+      "monokai"
+    ]
+  welcome:
+    showOnStartup: false
+  linter: {}
+  "highlight-selected":
+    onlyHighlightWholeWords: true
+  "project-manager":
+    sortBy: "group"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "highlight-line":
+    enableSelectionBorder: true
+  "markdown-preview": {}
+  finalbuilder:
+    installPath: "C:\\Program Files\\FinalBuilder 7"
+  "markdown-pdf": {}
+  "asciidoctor-preview": {}
+  "asciidoc-preview": {}
+  "autocomplete-plus": {}
+  "web-browser": {}
+  "tool-bar":
+    position: "Left"
+  "flex-tool-bar": {}
+  "linter-javac":
+    javaExecutablePath: "C:\\Program Files\\Java\\jdk1.7.0_79\\bin"
+  "status-bar":
+    cursorPositionFormat: "Ln %L, Col %C"
+    selectionCountFormat: "(%S selected)"
+  "package-switch": {}
+  "one-dark-ui": {}
+".html.jsp.text":
+  editor:
+    preferredLineLength: 100
+".gfm.source":
+  editor:
+    preferredLineLength: 80
+".junit-test-report.text":
+  editor:
+    preferredLineLength: 100
+".java-properties.source":
+  editor:
+    preferredLineLength: 100
+".java.source":
+  editor:
+    preferredLineLength: 100
+".coffee.source":
+  editor:
+    preferredLineLength: 100
+".litcoffee.source":
+  editor:
+    preferredLineLength: 100
+".pascal.source":
+  editor:
+    preferredLineLength: 100

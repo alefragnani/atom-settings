@@ -1,0 +1,38 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'.source.json':
+  'keywords':
+    'prefix': 'kw'
+    'body': '\"keywords\"\: \[\n\t\"${1:word1}\",\n\t\"${2:word2}\"\n\]\,'
+
+
+'.source.gfm':
+  'Tasklist - item':
+    'prefix': 'item'
+    'body': '- [ ] ${1:item}'
+
+'.source.pascal':
+  'beg … end':
+    'prefix': 'beg'
+    'body': 'begin\n\t${1:}\nendxxx;'
+
+  'while … cds eof':
+    'prefix': 'whieof'
+    'body': 'while not ${1:}.EOF do\nbegin\n\t${2:}\n\t${1:}.Next;\nend;'
