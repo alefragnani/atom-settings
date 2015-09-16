@@ -1,18 +1,19 @@
 "*":
   editor:
-    invisibles: {}
     fontFamily: "Source Code Pro"
     preferredLineLength: 100
-    softWrapAtPreferredLineLength: true
-    fontSize: 16
+    invisibles: {}
+    autoIndentOnPaste: false
+    showIndentGuide: true
+    fontSize: 12
   core:
-    audioBeep: false
-    fileEncoding: "windows1252"
     ignoredNames: [
       "tags"
+      "__history"
       "*.map"
       "*.dcu"
       "*.~dpr"
+      "*.~dpk"
       "*.~pas"
       "*.~dfm"
       "*.exe"
@@ -24,6 +25,9 @@
       "*.pdf"
       "Thumbs.db"
       "*.dll"
+      "*.fbl7"
+      "*.fb7lck"
+      "*.fbpInf"
       "*.obj"
       "*.OBJ"
       "*.zip"
@@ -32,9 +36,95 @@
       "._.DS_Store"
     ]
     disabledPackages: [
-      "soft-wrap-indicator"
+      "archive-view"
+      "atom-dark-syntax"
+      "atom-dark-ui"
+      "atom-light-syntax"
+      "atom-light-ui"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autosave"
+      "background-tips"
+      "base16-tomorrow-dark-theme"
+      "base16-tomorrow-light-theme"
+      "date"
+      "deprecation-cop"
       "exception-reporting"
+      "file-types"
+      "git-diff"
+      "highlight-line"
+      "image-view"
+      "incompatible-packages"
+      "keybinding-resolver"
+      "language-batchfile"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-diff"
+      "language-git"
+      "language-go"
+      "language-html"
+      "language-hyperlink"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-shellscript"
+      "language-source"
+      "language-todo"
+      "language-toml"
+      "language-yaml"
+      "linter-coffeelint"
+      "markdown-pdf"
+      "markdown-scroll-sync"
+      "metrics"
+      "one-light-syntax"
+      "one-light-ui"
+      "open-on-github"
+      "package-cop"
+      "package-generator"
+      "pretty-json"
+      "regex-railroad-diagram"
+      "release-notes"
+      "solarized-dark-syntax"
+      "solarized-light-syntax"
+      "sort-lines"
+      "spell-check"
+      "Sublime-Style-Column-Selection"
+      "symbol-gen"
+      "tabularize"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+      "whitespace"
+      "wrap-selection"
+      "asciidoc-preview"
+      "markdown-preview"
+      "tool-bar-main"
+      "flex-tool-bar"
+      "tool-bar"
+      "minimap"
+      "linter"
+      "dev-live-reload"
+      "link"
+      "styleguide"
+      "language-coffee-script"
+      "language-css"
+      "language-java"
+      "language-javascript"
+      "language-less"
+      "language-json"
+      "linter-less"
+      "linter-csslint"
     ]
+    fileEncoding: "windows1252"
     themes: [
       "code-dark-ui"
       "monokai"
@@ -47,8 +137,8 @@
   "project-manager":
     sortBy: "group"
   "tree-view":
-    hideVcsIgnoredFiles: true
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "highlight-line":
@@ -58,18 +148,115 @@
     installPath: "C:\\Program Files\\FinalBuilder 7"
   "markdown-pdf": {}
   "asciidoctor-preview": {}
-  "asciidoc-preview": {}
   "autocomplete-plus": {}
   "web-browser": {}
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "asciidoc-preview":
+    showToc: false
+    showNumberedHeadings: false
+    grammars: [
+      "source.asciidoc"
+    ]
   "tool-bar":
     position: "Left"
   "flex-tool-bar": {}
+  "package-switch":
+    SaveRestore: true
+    SaveData: [
+      "archive-view"
+      "atom-dark-syntax"
+      "atom-dark-ui"
+      "atom-light-syntax"
+      "atom-light-ui"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autosave"
+      "background-tips"
+      "base16-tomorrow-dark-theme"
+      "base16-tomorrow-light-theme"
+      "date"
+      "deprecation-cop"
+      "exception-reporting"
+      "file-types"
+      "git-diff"
+      "highlight-line"
+      "image-view"
+      "incompatible-packages"
+      "keybinding-resolver"
+      "language-batchfile"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-diff"
+      "language-git"
+      "language-go"
+      "language-html"
+      "language-hyperlink"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-shellscript"
+      "language-source"
+      "language-todo"
+      "language-toml"
+      "language-yaml"
+      "linter-coffeelint"
+      "markdown-pdf"
+      "markdown-scroll-sync"
+      "metrics"
+      "one-light-syntax"
+      "one-light-ui"
+      "open-on-github"
+      "package-cop"
+      "package-generator"
+      "pretty-json"
+      "regex-railroad-diagram"
+      "release-notes"
+      "solarized-dark-syntax"
+      "solarized-light-syntax"
+      "sort-lines"
+      "spell-check"
+      "Sublime-Style-Column-Selection"
+      "symbol-gen"
+      "tabularize"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+      "whitespace"
+      "wrap-selection"
+      "asciidoc-preview"
+      "markdown-preview"
+      "tool-bar-main"
+      "flex-tool-bar"
+      "tool-bar"
+      "minimap"
+      "linter"
+      "dev-live-reload"
+      "link"
+      "styleguide"
+      "language-coffee-script"
+      "language-css"
+      "language-java"
+      "language-javascript"
+      "language-less"
+      "language-json"
+      "linter-less"
+      "linter-csslint"
+    ]
   "linter-javac":
     javaExecutablePath: "C:\\Program Files\\Java\\jdk1.7.0_79\\bin"
   "status-bar":
     cursorPositionFormat: "Ln %L, Col %C"
     selectionCountFormat: "(%S selected)"
-  "package-switch": {}
   "one-dark-ui": {}
 ".html.jsp.text":
   editor:

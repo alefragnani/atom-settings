@@ -1,4 +1,14 @@
- /*
+@import "packages/file-icons/styles/icons";
+@import "packages/file-icons/styles/items";
+@import "packages/file-icons/styles/colors";
+
+@import 'syntax-variables';
+
+//https://discuss.atom.io/t/rearrange-status-bar-to-the-bottom-panel/18597
+@import "ui-variables";
+
+
+/*
  * Your Stylesheet
  *
  * This stylesheet is loaded when Atom starts up and is reloaded automatically
@@ -7,52 +17,69 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
-@import "packages/file-icons/styles/icons";
-@import "packages/file-icons/styles/items";
-@import "packages/file-icons/styles/colors";
+// .symbols-tree-view {
+//   width: 225px;  /* many functions are OBJECT_NAME.longFunctionName */
+//   height: 110%;  /* don't need padding, though perhaps .space-pen-div { padding-top:5px } would help */
+//   font-size: 105%;  /* just big enough; 110% is good also */
+//   position: relative;
+//   overflow-y: auto;
+//   overflow-x: hidden;
+// }
+
+// cores no package-control
+    // .fuzzy-finder .list-group .character-match {
+    //   color: @text-color-info;
+    // }
+    // 
+    // .command-palette .list-group .character-match {
+    //   color: @text-color-info;
+    // }
+    // 
+    // .symbols-view .list-group .character-match {
+    //   color: @text-color-info;
+    // }
+
+    .project-manager-list-group {
+      color: @text-color-info;
+      .selected & {
+        color: @text-color-info;
+      }
+    }
 
 
-.command-palette .list-group .character-match {
-     color: @text-color-info;
-    // font-weight: bold;
-}
 
-
-.tree-view {
-
-}
-
-// style the background and foreground colors on the atom-text-editor-element
-// itself
-atom-text-editor {
-
-}
-
-// To style other content in the text editor's shadow DOM, use the ::shadow
-// expression
-atom-text-editor::shadow .cursor {
-
-}
+//
+// atom-text-editor {
+//   .meta.function::before {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 1px;
+//     left: 0;
+//     top: 0;
+//     background: #cccc9a;
+//   }
+// }
 
 atom-text-editor {
   webkit-font-smoothing: antialiased;
 }
 
-
 //.primary-line { display: inline; max-width: 80%}
 //.secondary-line { display: inline; float: right}
 
-.tab-bar .tab .title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+// .tab-bar .tab .title {
+//   overflow: hidden;
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
+// }
 
 // Delphi Files
-.pascal-source-icon   { .octicons; content: "\f085"; }
-.pascal-package-icon  { .octicons; content: "\f07c"; }
-.pascal-resource-icon { .fa; content: "\f0f8";}
-.settings-icon        { .octicons; content: "\f07c";}
+ .pascal-source-icon   { .octicons; content: "\f085"; }
+ .pascal-package-icon  { .octicons; content: "\f07c"; }
+ .pascal-resource-icon { .fa; content: "\f0f8";}
+ .settings-icon  { .octicons; content: "\f07c";}
+
 
 @{pane-tab-selector}, .icon-file-text {
   &[data-name$=".pas"]:before    { .pascal-source-icon; .medium-yellow; }
@@ -83,23 +110,32 @@ atom-text-editor {
  }
 
 
-//https://discuss.atom.io/t/bracket-matcher-animation/15648/3
-atom-text-editor::shadow {
-  .highlights .bracket-matcher .region {
-    background-color: red;
-    transition: background-color 400ms; // cursor blinks at 400ms intervals
-  }
+ // https://discuss.atom.io/t/bracket-matcher-animation/15648/3
+//  atom-text-editor::shadow {
+//   .highlights .bracket-matcher .region {
+//     background-color: red;
+//     transition: background-color 400ms; // cursor blinks at 400ms intervals
+//   }
+//
+//   .cursors.blink-off ~ .highlights .bracket-matcher .region {
+//     background-color: yellow;
+//   }
+// }
 
-  .cursors.blink-off ~ .highlights .bracket-matcher .region {
-    background-color: yellow;
-  }
+// https://discuss.atom.io/t/where-to-set-the-matched-brace-color/12372/2
+atom-text-editor::shadow  .bracket-matcher .region {
+  border: 1px solid rgba(222, 149, 54, 0.6);
+  border-radius: 3px;
+  background-color: rgba(0, 255, 0, 0.3);
+  z-index: 100;
 }
 
 
+// https://discuss.atom.io/t/how-to-customize-hack-a-syntax-theme-grammar/15814
 atom-text-editor::shadow {
   .gfm {
     .raw {
-      color: red;
+      color: #66D9EF;
     }
   }
 }
@@ -107,67 +143,129 @@ atom-text-editor::shadow {
 atom-text-editor[data-grammar="source gfm"]::shadow .gutter {
         margin-right:15%;
     }
+// TODO: Styled
+// atom-text-editor::shadow .gutter .foldable .icon-right {
+//     visibility: visible;
+// }
+
+// TODO: Styled
+// https://discuss.atom.io/t/enable-or-disable-highlight-focused-line/2712/9
+// atom-text-editor.is-focused::shadow {
+//   .line.cursor-line, .line-number.cursor-line-no-selection, .region {
+//     background-color: rgba(120, 120, 120, 0.2);
+//   }
+// }
+
+// atom-text-editor::shadow .indent-guide {
+//   box-sizing: border-box;
+//   border-left: 1px dotted;
+// }
+
+// TODO: Styled
+// atom-text-editor::shadow .wrap-guide {
+// //  width: 1px;
+// //  background-color: gray;
+//   box-sizing: border-box;
+//   border-left: 1px dotted;
+// }
+
+//https://discuss.atom.io/t/rearrange-status-bar-to-the-bottom-panel/18597
+// atom-workspace {
+//   height: calc(~"100% - " (@component-line-height + 1px));
+// }
+
+status-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //background-color: @tool-panel-background-color;
+  background-color: dodgerblue;//@tool-panel-background-color;
+  // TODO: Styled
+//  color: white;
+}
+
+//TODO: Styled
+// .status-bar {
+//   height: 2.4em;
+// }
+
+//TODO: Styled
+//https://discuss.atom.io/t/change-the-color-and-width-of-editors-sidebar/18545/9
+// .scrollbars-visible-always {
+//   /deep/ ::-webkit-scrollbar {
+//     width: 15px;
+//     height: 15px;
+// 
+//   }
+// }
 
 
+//TODO: Styled
+//#252526
+// .tree-view {
+//   background: #252526;
+// }
 
-    atom-text-editor::shadow .gutter .foldable .icon-right {
-        visibility: visible;
-    }
+// TODO: Styled
+// scrollbar  da treeview
+// .scrollbars-visible-always {
+//     /deep/ ::-webkit-scrollbar-track {
+//     background: #252526;
+//   }
+// }
 
-    // https://discuss.atom.io/t/enable-or-disable-highlight-focused-line/2712/9
-    atom-text-editor.is-focused::shadow {
-      .line.cursor-line, .line-number.cursor-line-no-selection, .region {
-        background-color: rgba(120, 120, 120, 0.2);
-      }
-    }
+// TODO: Styled
+// cor de fundo do editor
+// atom-text-editor {
+//   background-color: #1E1E1E;
+// }
 
-    // atom-text-editor::shadow .indent-guide {
-    //   box-sizing: border-box;
-    //   border-left: 1px dotted;
-    // }
-
-    atom-text-editor::shadow .wrap-guide {
-    //  width: 1px;
-    //  background-color: gray;
-      box-sizing: border-box;
-      border-left: 1px dotted;
-    }
-
-    //https://discuss.atom.io/t/rearrange-status-bar-to-the-bottom-panel/18597
-    atom-workspace {
-      height: calc(~"100% - " (@component-line-height + 1px));
-    }
-
-    status-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      //background-color: @tool-panel-background-color;
-      background-color: dodgerblue;//@tool-panel-background-color;
-      color: white;
-    }
-
-    .status-bar {
-    height: 2.4em;
-    }
-
-    //https://discuss.atom.io/t/change-the-color-and-width-of-editors-sidebar/18545/9
-    .scrollbars-visible-always {
-      /deep/ ::-webkit-scrollbar {
-        width: 15px;
-        height: 15px;
-      }
-    }
+// desnecessário pq já tem o acima
+// // scrollbar o editor
+// .scrollbars-visible-always {
+//     /deep/ ::-webkit-scrollbar-track {
+//     background: #252526; 
+//   }
+// }
 
 
-    // combinando com status azul
-    status-bar .status-bar-right .inline-block {
-      color: white;
-    }
+// TODO: Styled
+// efeitos sobre o gutter
+// atom-text-editor::shadow .gutter {
+//   background-color: #1E1E1E;
+//   // border-right-style: solid;
+//   // border-right-width: 1px;
+//   // border-right-color: gray;
+// }
 
-    // esconder o nome do arquivo da statusbar
-    status-bar .inline-block.file-info {
-      visibility: hidden;
-      width: 0px;
-    }
+
+// TODO: Styled
+// // combinando com status azul
+// status-bar .status-bar-right .inline-block {
+//   color: white;
+// }/
+
+.package-updates-status-view, .package-updates-status-view:hover {
+   color: #dddddd;
+}
+
+// esconder o nome do arquivo da statusbar
+status-bar .inline-block.file-info {
+  visibility: hidden;
+  width: 0px;
+}
+
+// https://discuss.atom.io/t/announce-gutter-shadow/17214/4
+// .tab-bar, atom-panel-container.bottom{
+//   z-index: 2;
+// }
+// atom-text-editor::shadow{
+//   .gutter{
+//     z-index: 1;
+//     box-shadow: 0.5rem 0 2rem hsl(0, 0%, 5%);
+//   }
+//   .scroll-view{
+//     padding-left: 0.5rem;
+//   }
+// }

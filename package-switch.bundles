@@ -1,0 +1,222 @@
+{
+  "Markdown": {
+    "packages": [
+      {
+        "name": "asciidoc-preview",
+        "action": "added"
+      },
+      {
+        "name": "markdown-preview",
+        "action": "added"
+      },
+      {
+        "name": "markdown-pdf",
+        "action": "added"
+      },
+      {
+        "name": "markdown-scroll-sync",
+        "action": "added"
+      },
+      {
+        "name": "minimap",
+        "action": "added"
+      }
+    ]
+  },
+  "Web": {
+    "packages": [
+      {
+        "name": "language-javascript",
+        "action": "added"
+      },
+      {
+        "name": "language-coffee-script",
+        "action": "added"
+      },
+      {
+        "name": "language-css",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-css",
+        "action": "added"
+      },
+      {
+        "name": "language-html",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-html",
+        "action": "added"
+      },
+      {
+        "name": "language-json",
+        "action": "added"
+      },
+      {
+        "name": "language-less",
+        "action": "added"
+      },
+      {
+        "name": "pretty-json",
+        "action": "added"
+      },
+      {
+        "name": "styleguide",
+        "action": "added"
+      }
+    ]
+  },
+  "Delphi": {
+    "packages": [
+      {
+        "name": "file-icons",
+        "action": "added"
+      },
+      {
+        "name": "file-types",
+        "action": "added"
+      },
+      {
+        "name": "finalbuilder",
+        "action": "added"
+      },
+      {
+        "name": "flex-tool-bar",
+        "action": "added"
+      },
+      {
+        "name": "highlight-line",
+        "action": "added"
+      },
+      {
+        "name": "highlight-selected",
+        "action": "added"
+      },
+      {
+        "name": "language-pascal",
+        "action": "added"
+      },
+      {
+        "name": "last-cursor-position",
+        "action": "added"
+      },
+      {
+        "name": "Sublime-Style-Column-Selection",
+        "action": "added"
+      },
+      {
+        "name": "tool-bar",
+        "action": "added"
+      },
+      {
+        "name": "tool-bar-main",
+        "action": "added"
+      },
+      {
+        "name": "wrap-selection",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-atom-api",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-plus",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-snippets",
+        "action": "added"
+      },
+      {
+        "name": "autoflow",
+        "action": "added"
+      },
+      {
+        "name": "bracket-matcher",
+        "action": "added"
+      },
+      {
+        "name": "encoding-selector",
+        "action": "added"
+      },
+      {
+        "name": "grammar-selector",
+        "action": "added"
+      },
+      {
+        "name": "symbols-view",
+        "action": "added"
+      },
+      {
+        "name": "tree-view",
+        "action": "added"
+      },
+      {
+        "name": "whitespace",
+        "action": "added"
+      },
+      {
+        "name": "wrap-guide",
+        "action": "added"
+      }
+    ]
+  },
+  "Dev": {
+    "packages": [
+      {
+        "name": "package-cop",
+        "action": "added"
+      },
+      {
+        "name": "deprecation-cop",
+        "action": "added"
+      },
+      {
+        "name": "incompatible-packages",
+        "action": "added"
+      },
+      {
+        "name": "keybinding-resolver",
+        "action": "added"
+      },
+      {
+        "name": "timecop",
+        "action": "added"
+      },
+      {
+        "name": "update-package-dependencies",
+        "action": "added"
+      },
+      {
+        "name": "dev-live-reload",
+        "action": "added"
+      }
+    ]
+  },
+  "Linter": {
+    "packages": [
+      {
+        "name": "linter",
+        "action": "added"
+      },
+      {
+        "name": "linter-coffeelint",
+        "action": "added"
+      },
+      {
+        "name": "linter-css",
+        "action": "added"
+      },
+      {
+        "name": "linter-less",
+        "action": "added"
+      },
+      {
+        "name": "autocomplete-atom-api",
+        "action": "added"
+      }
+    ]
+  }
+}
