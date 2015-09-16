@@ -24,15 +24,21 @@
 
 
 '.source.gfm':
-  'Tasklist - item':
+  'Tasklist - Item':
     'prefix': 'item'
     'body': '- [ ] ${1:item}'
 
 '.source.pascal':
   'beg … end':
     'prefix': 'beg'
-    'body': 'begin\n\t${1:}\nendxxx;'
+    'body': 'begin\n\t${1:}\nend;'
 
   'while … cds eof':
     'prefix': 'whieof'
     'body': 'while not ${1:}.EOF do\nbegin\n\t${2:}\n\t${1:}.Next;\nend;'
+    
+# AsciiDoc
+'.source.asciidoc':
+  'code':
+    'prefix': 'code'
+    'body': '[source,${1:language}\n\t----\n${2:the code}\n----'

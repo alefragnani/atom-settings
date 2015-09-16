@@ -28,8 +28,7 @@
 'atom-workspace atom-text-editor':
   'ctrl-alt-shift-P': 'unset!'
 
-'atom-workspace':
-  'ctrl-alt-b': 'bookmarks:toggle-bookmark'
+
 
 # Close Find Results Tab
 'atom-workspace':
@@ -42,3 +41,7 @@
 # Go Back
 'atom-workspace':
   'alt-=': 'last-cursor-position:next'
+
+'atom-workspace atom-text-editor:not(.mini)':
+  'ctrl-alt--': 'resize-panes:shrink-active-pane'
+  'ctrl-alt-=': 'resize-panes:enlarge-active-pane'
