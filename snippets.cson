@@ -24,9 +24,44 @@
 
 
 '.source.gfm':
-  'Tasklist - Item':
+  'Tasklist … Item':
     'prefix': 'item'
     'body': '- [ ] ${1:item}'
+
+  'License … Item':
+    'prefix': 'licenseItem'
+    'body': '## License\n\n[MIT](LICENSE.md) &copy; Alessandro Fragnani'
+
+  'License … Header':
+    'prefix': 'licenseHeader'
+    'body': 'The MIT License (MIT)\n\nCopyright (c) ${1:ano} Alessandro Fragnani'
+
+  'License … Text':
+    'prefix': 'licenseBody'
+    'body': """
+      Permission is hereby granted, free of charge, to any person obtaining
+      a copy of this software and associated documentation files (the
+      "Software"), to deal in the Software without restriction, including
+      without limitation the rights to use, copy, modify, merge, publish,
+      distribute, sublicense, and/or sell copies of the Software, and to
+      permit persons to whom the Software is furnished to do so, subject to
+      the following conditions:
+
+      The above copyright notice and this permission notice shall be
+      included in all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+      NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+      LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+      OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    """
+
+  'Donation … USD':
+    'prefix': 'donationUSD'
+    'body': '\n\n---\n\n[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=atom%20plugins&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) if you enjoy using this plugin :smile:'
 
 '.source.pascal':
   'beg … end':
@@ -36,7 +71,7 @@
   'while … cds eof':
     'prefix': 'whieof'
     'body': 'while not ${1:}.EOF do\nbegin\n\t${2:}\n\t${1:}.Next;\nend;'
-    
+
 # AsciiDoc
 '.source.asciidoc':
   'code':

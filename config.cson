@@ -1,12 +1,21 @@
 "*":
-  editor:
-    fontFamily: "Source Code Pro"
-    preferredLineLength: 100
-    invisibles: {}
-    autoIndentOnPaste: false
-    showIndentGuide: true
-    fontSize: 12
+  "asciidoc-preview":
+    grammars: [
+      "source.asciidoc"
+    ]
+    showNumberedHeadings: false
+    showToc: false
+  "asciidoctor-preview": {}
+  "atom-typescript": {}
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus": {}
   core:
+    disabledPackages: [
+      "tool-bar-main"
+    ]
+    fileEncoding: "windows1252"
+    followSymlinks: false
     ignoredNames: [
       "tags"
       "__history"
@@ -35,236 +44,74 @@
       ".DS_Store"
       "._.DS_Store"
     ]
-    disabledPackages: [
-      "archive-view"
-      "atom-dark-syntax"
-      "atom-dark-ui"
-      "atom-light-syntax"
-      "atom-light-ui"
-      "autocomplete-atom-api"
-      "autocomplete-css"
-      "autocomplete-html"
-      "autosave"
-      "background-tips"
-      "base16-tomorrow-dark-theme"
-      "base16-tomorrow-light-theme"
-      "date"
-      "deprecation-cop"
-      "exception-reporting"
-      "file-types"
-      "git-diff"
-      "highlight-line"
-      "image-view"
-      "incompatible-packages"
-      "keybinding-resolver"
-      "language-batchfile"
-      "language-c"
-      "language-clojure"
-      "language-csharp"
-      "language-diff"
-      "language-git"
-      "language-go"
-      "language-html"
-      "language-hyperlink"
-      "language-make"
-      "language-mustache"
-      "language-objective-c"
-      "language-perl"
-      "language-php"
-      "language-property-list"
-      "language-python"
-      "language-ruby"
-      "language-ruby-on-rails"
-      "language-sass"
-      "language-shellscript"
-      "language-source"
-      "language-todo"
-      "language-toml"
-      "language-yaml"
-      "linter-coffeelint"
-      "markdown-pdf"
-      "markdown-scroll-sync"
-      "metrics"
-      "one-light-syntax"
-      "one-light-ui"
-      "open-on-github"
-      "package-cop"
-      "package-generator"
-      "pretty-json"
-      "regex-railroad-diagram"
-      "release-notes"
-      "solarized-dark-syntax"
-      "solarized-light-syntax"
-      "sort-lines"
-      "spell-check"
-      "Sublime-Style-Column-Selection"
-      "symbol-gen"
-      "tabularize"
-      "timecop"
-      "update-package-dependencies"
-      "welcome"
-      "whitespace"
-      "wrap-selection"
-      "asciidoc-preview"
-      "markdown-preview"
-      "tool-bar-main"
-      "flex-tool-bar"
-      "tool-bar"
-      "minimap"
-      "linter"
-      "dev-live-reload"
-      "link"
-      "styleguide"
-      "language-coffee-script"
-      "language-css"
-      "language-java"
-      "language-javascript"
-      "language-less"
-      "language-json"
-      "linter-less"
-      "linter-csslint"
-    ]
-    fileEncoding: "windows1252"
     themes: [
       "code-dark-ui"
-      "monokai"
+      "code-dark-syntax"
     ]
-  welcome:
-    showOnStartup: false
-  linter: {}
-  "highlight-selected":
-    onlyHighlightWholeWords: true
-  "project-manager":
-    sortBy: "group"
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "highlight-line":
-    enableSelectionBorder: true
-  "markdown-preview": {}
+  deprecated:
+    tool:
+      npmapm: true
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "71102041-c109-70bd-5451-7fd26f6e186e"
   finalbuilder:
-    installPath: "C:\\Program Files\\FinalBuilder 7"
-  "markdown-pdf": {}
-  "asciidoctor-preview": {}
-  "autocomplete-plus": {}
-  "web-browser": {}
+    installPath: "c:\\program files\\microsoft vs code"
   "find-and-replace":
     openProjectFindResultsInRightPane: true
-  "asciidoc-preview":
-    showToc: false
-    showNumberedHeadings: false
-    grammars: [
-      "source.asciidoc"
-    ]
-  "tool-bar":
-    position: "Left"
   "flex-tool-bar": {}
-  "package-switch":
-    SaveRestore: true
-    SaveData: [
-      "archive-view"
-      "atom-dark-syntax"
-      "atom-dark-ui"
-      "atom-light-syntax"
-      "atom-light-ui"
-      "autocomplete-atom-api"
-      "autocomplete-css"
-      "autocomplete-html"
-      "autosave"
-      "background-tips"
-      "base16-tomorrow-dark-theme"
-      "base16-tomorrow-light-theme"
-      "date"
-      "deprecation-cop"
-      "exception-reporting"
-      "file-types"
-      "git-diff"
-      "highlight-line"
-      "image-view"
-      "incompatible-packages"
-      "keybinding-resolver"
-      "language-batchfile"
-      "language-c"
-      "language-clojure"
-      "language-csharp"
-      "language-diff"
-      "language-git"
-      "language-go"
-      "language-html"
-      "language-hyperlink"
-      "language-make"
-      "language-mustache"
-      "language-objective-c"
-      "language-perl"
-      "language-php"
-      "language-property-list"
-      "language-python"
-      "language-ruby"
-      "language-ruby-on-rails"
-      "language-sass"
-      "language-shellscript"
-      "language-source"
-      "language-todo"
-      "language-toml"
-      "language-yaml"
-      "linter-coffeelint"
-      "markdown-pdf"
-      "markdown-scroll-sync"
-      "metrics"
-      "one-light-syntax"
-      "one-light-ui"
-      "open-on-github"
-      "package-cop"
-      "package-generator"
-      "pretty-json"
-      "regex-railroad-diagram"
-      "release-notes"
-      "solarized-dark-syntax"
-      "solarized-light-syntax"
-      "sort-lines"
-      "spell-check"
-      "Sublime-Style-Column-Selection"
-      "symbol-gen"
-      "tabularize"
-      "timecop"
-      "update-package-dependencies"
-      "welcome"
-      "whitespace"
-      "wrap-selection"
-      "asciidoc-preview"
-      "markdown-preview"
-      "tool-bar-main"
-      "flex-tool-bar"
-      "tool-bar"
-      "minimap"
-      "linter"
-      "dev-live-reload"
-      "link"
-      "styleguide"
-      "language-coffee-script"
-      "language-css"
-      "language-java"
-      "language-javascript"
-      "language-less"
-      "language-json"
-      "linter-less"
-      "linter-csslint"
-    ]
+  "highlight-line":
+    enableSelectionBorder: true
+  "highlight-selected":
+    onlyHighlightWholeWords: true
+  linter:
+    showErrorPanel: false
+    showErrorTabFile: false
+    showErrorTabProject: false
   "linter-javac":
     javaExecutablePath: "C:\\Program Files\\Java\\jdk1.7.0_79\\bin"
+  "linter-jshint": {}
+  "markdown-pdf": {}
+  "markdown-preview": {}
+  "one-dark-ui": {}
+  "package-switch": {}
+  "project-manager":
+    sortBy: "group"
   "status-bar":
     cursorPositionFormat: "Ln %L, Col %C"
     selectionCountFormat: "(%S selected)"
-  "one-dark-ui": {}
-".html.jsp.text":
+  "tagged-comment":
+    lastEnteredText: "teste 0.3.2"
+    lastTag: "12/01/2016 - EU: teste 0.3.2"
+    tagString: "#day/#month/#year - EU: #enteredText"
+  "tool-bar":
+    position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "web-browser": {}
+  welcome:
+    showOnStartup: false
+".cake.source":
+  editor:
+    preferredLineLength: 100
+".coffee.source":
+  editor:
+    preferredLineLength: 100
+".cs.source":
+  editor:
+    preferredLineLength: 100
+".csx.source":
   editor:
     preferredLineLength: 100
 ".gfm.source":
   editor:
     preferredLineLength: 80
-".junit-test-report.text":
+".html.jsp.text":
   editor:
     preferredLineLength: 100
 ".java-properties.source":
@@ -273,12 +120,24 @@
 ".java.source":
   editor:
     preferredLineLength: 100
-".coffee.source":
+".json.source":
+  editor:
+    preferredLineLength: 100
+".junit-test-report.text":
   editor:
     preferredLineLength: 100
 ".litcoffee.source":
   editor:
     preferredLineLength: 100
+".nant-build.source":
+  editor:
+    preferredLineLength: 100
 ".pascal.source":
+  editor:
+    preferredLineLength: 100
+".source.ts":
+  editor:
+    preferredLineLength: 100
+".source.tsx":
   editor:
     preferredLineLength: 100

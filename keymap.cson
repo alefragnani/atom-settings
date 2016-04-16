@@ -28,6 +28,8 @@
 'atom-workspace atom-text-editor':
   'ctrl-alt-shift-P': 'unset!'
 
+'.platform-win32 atom-text-editor':
+  'ctrl-alt-m': 'unset!'
 
 
 # Close Find Results Tab
