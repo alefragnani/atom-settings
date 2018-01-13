@@ -51,3 +51,15 @@ _Not working - Atom raises error because of `@import "packages/file-icons/styles
 * Focused line
 * Wrap line
 * StatusBar
+
+## Syncing (using Symlink)
+
+### Windows
+
+```
+cd %HOMEPATH%/Documents/GitHub/atom-settings/
+mklink /H %HOMEPATH%\.atom\config.cson config.cson
+mklink /H %HOMEPATH%\.atom\init.coffee init.coffee
+mklink /H %HOMEPATH%\.atom\keymap.cson keymap.cson
+mklink /H %HOMEPATH%\.atom\snippets.cson snippets.cson
+```
