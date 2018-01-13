@@ -61,7 +61,7 @@
   "exception-reporting":
     userId: "71102041-c109-70bd-5451-7fd26f6e186e"
   finalbuilder:
-    installPath: "c:\\program files\\microsoft vs code"
+    installPath: "C:\\program files (x86)\\FinalBuilder"
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
   "flex-tool-bar": {}
