@@ -44,6 +44,7 @@
       ".DS_Store"
       "._.DS_Store"
     ]
+    telemetryConsent: "no"
     themes: [
       "code-dark-ui"
       "code-dark-syntax"
@@ -53,7 +54,7 @@
       npmapm: true
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Source Code Pro"
+    fontFamily: "Consolas"
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -62,7 +63,7 @@
   finalbuilder:
     installPath: "c:\\program files\\microsoft vs code"
   "find-and-replace":
-    openProjectFindResultsInRightPane: true
+    projectSearchResultsPaneSplitDirection: "right"
   "flex-tool-bar": {}
   "highlight-line":
     enableSelectionBorder: true
