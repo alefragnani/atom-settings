@@ -29,14 +29,14 @@ Mostly to use the same shortcut for every code editor
 * Java
 * JSON
 * JavaScript
-* CoffeScript
+* CoffeeScript
 * Markdown
 
 ## Stylesheet
 
 _Not working - Atom raises error because of `@import "packages/file-icons/styles/icons"`. It appears to be using the synced folder, instead of `.atom`_
 
-* Character Match in Command Pallete and List Group
+* Character Match in Command Palette and List Group
 * StatusBar
   - On the bottom
   - Colored
@@ -45,7 +45,7 @@ _Not working - Atom raises error because of `@import "packages/file-icons/styles
   - Delphi
   - Database
   - Folders
-* Bracked Matcher
+* Bracket Matcher
 * Markdown `code`
 * Folding always visible
 * Focused line
